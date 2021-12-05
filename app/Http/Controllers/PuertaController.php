@@ -9,7 +9,7 @@ class PuertaController extends Controller
 {
     public function datos(Request $request){
         
-        $response=Http::withHeaders(['X-AIO-key'=>$request->input('key')
+        $response=Http::withHeaders(['X-AIO-key'=>'aio_sLhz26dNvxBTfqPDLGKVh7HxcqBa'
 
 
         ])->get('https://io.adafruit.com/api/v2/MiguelAngel7879/feeds/led/data');
@@ -28,7 +28,7 @@ class PuertaController extends Controller
 
     public function ultimoDato(Request $request){
         
-        $response=Http::withHeaders(['X-AIO-key'=>$request->input('key')
+        $response=Http::withHeaders(['X-AIO-key'=>'aio_sLhz26dNvxBTfqPDLGKVh7HxcqBa'
 
 
         ])->get('https://io.adafruit.com/api/v2/MiguelAngel7879/feeds/led/data/last');
@@ -42,7 +42,7 @@ class PuertaController extends Controller
     }
     public function controlador(Request $request){
         
-        $response=Http::withHeaders(['X-AIO-key'=>$request->input('key')
+        $response=Http::withHeaders(['X-AIO-key'=>'aio_sLhz26dNvxBTfqPDLGKVh7HxcqBa'
 
 
         ])->post('https://io.adafruit.com/api/v2/MiguelAngel7879/feeds/led/data',[
